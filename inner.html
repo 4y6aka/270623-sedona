@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">ИНФОРМАЦИЯ</a>
+          </li>
+          <li>
+            <a href="#">ФОТО И ВИДЕО</a>
+          </li>
+          <li>
+            <a href="#">КАРТА ШТАТА</a>
+          </li>
+          <li>
+            <a href="#">ГОСТИНИЦЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="index-logo">
+        <img src="http://placehold.it/150x100" width="100" height="100" alt="">
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="inner-search">
+      <form action="/echo" method="post">
+        <fieldset>
+          <legend>Выбор гостиницы</legend>
+          <div class="inner-checkboxes-infrastructure">
+            <p class="inner-content-title">ИНФРАСТРУКТУРА:</p>
+            <ul>
+              <li>
+                <input id="checkbox-1" type="checkbox" checked>
+                <label for="checkbox-1">БАССЕЙН</label>
+              </li>
+              <li>
+                <input id="checkbox-2" type="checkbox">
+                <label for="checkbox-2">ПАРКОВКА</label>
+              </li>
+              <li>
+                <input id="checkbox-3" type="checkbox">
+                <label for="checkbox-3">WI-FI</label>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-checkboxes-house">
+            <p class="inner-content-title">ТИП ЖИЛЬЯ:</p>
+            <ul>
+              <li>
+                <input id="checkbox-4" type="checkbox" checked>
+                <label for="checkbox-4">ГОСТИНИЦА</label>
+              </li>
+              <li>
+                <input id="checkbox-5" type="checkbox" checked>
+                <label for="checkbox-5">МОТЕЛЬ</label>
+              </li>
+              <li>
+                <input id="checkbox-6" type="checkbox" checked>
+                <label for="checkbox-6">АПАРТАМЕНТЫ</label>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-range-submit">
+            <label for="price">СТОИМОСТЬ В СУТКИ:</label>
+            ОТ 0 <input type="range" id="price" name="price" min="0" max="3000" step="1"> ДО 3000
+            <input type="submit" value="ПОКАЗАТЬ">
+          </div>
+        </fieldset>
+      </form>
+      <div class="search-menu">
+        <p class="number-items">НАЙДЕНО:3</p>
+        <p class="inner-sort">Сортировка</p>
+        <div class="inner-sort">
+          <a href="#">ПО ЦЕНЕ</a>
+        </div>
+        <div class="inner-sort">
+          <a href="#">ПО ТИПУ</a>
+        </div>
+        <div class="inner-sort">
+          <a href="#">ПО РЕЙТИНГУ</a>
+        </div>
+        <a class="arrow-up"></a>
+        <a class="arrow-down"></a>
+      </div>
+    </div>
+    <div class="hotel-1">
+      <img class="hotel-1-img" src="http://placehold.it/150x100">
+      <div class="hotel-1-info">
+      <h2>AMARA RESORT & SPA</h2>
+        <p class="hotel-1-type">ГОСТИНИЦА</p>
+        <p class="hotel-1-price">ОТ 4000 Р.</p>
+        <a class="btn-details">ПОДРОБНОСТИ</a>
+        <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-1-rating">
+        <img class="hotel-1-stars" src="http://placehold.it/150x100">
+        <div class="hotel-1-rating-number">РЕЙТИНГ: 8.5</div>
+      </div>
+    </div>
+    <div class="hotel-2">
+      <img class="hotel-2-img" src="http://placehold.it/150x100">
+      <div class="hotel-2-info">
+        <h2>DESERT QUAIL INN</h2>
+        <p class="hotel-2-type">МОТЕЛЬ</p>
+        <p class="hotel-2-price">ОТ 3000 Р.</p>
+        <a class="btn-details">ПОДРОБНОСТИ</a>
+        <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-2-rating">
+        <img class="hotel-2-stars" src="http://placehold.it/150x100">
+        <div class="hotel-2-rating-number">РЕЙТИНГ: 8.9</div>
+      </div>
+    </div>
+    <div class="hotel-3">
+      <img class="hotel-3-img" src="http://placehold.it/150x100">
+      <div class="hotel-3-info">
+        <h2>VILLAS AT POCCO DIABLO</h2>
+        <p class="hotel-3-type">АПАРТАМЕНТЫ</p>
+        <p class="hotel-3-price">ОТ 2000 Р.</p>
+        <a class="btn-details">ПОДРОБНОСТИ</a>
+        <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-3-rating">
+        <img class="hotel-3-stars" src="http://placehold.it/150x100">
+        <div class="hotel-3-rating-number">РЕЙТИНГ: 9.2</div>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-hashtag">
+        <p>#VISITSEDONA</p>
+      </div>
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>WEBSITE BY</p>
+        <a class="logo-image" href="#">
+          <img src="http://placehold.it/150x100">
+        </a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
