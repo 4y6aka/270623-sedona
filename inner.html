@@ -15,6 +15,8 @@
           <li>
             <a href="#">ФОТО И ВИДЕО</a>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="#">КАРТА ШТАТА</a>
           </li>
@@ -34,68 +36,65 @@
         <fieldset>
           <legend>Выбор гостиницы</legend>
           <div class="inner-checkboxes-infrastructure">
-            <p class="inner-content-title">ИНФРАСТРУКТУРА:</p>
+            <div class="inner-content-title">ИНФРАСТРУКТУРА:</div>
             <ul>
               <li>
-                <input id="checkbox-1" type="checkbox" checked>
-                <label for="checkbox-1">БАССЕЙН</label>
+                <input id="checkbox-pool" type="checkbox" checked>
+                <label for="checkbox-pool">БАССЕЙН</label>
               </li>
               <li>
-                <input id="checkbox-2" type="checkbox">
-                <label for="checkbox-2">ПАРКОВКА</label>
+                <input id="checkbox-parking" type="checkbox">
+                <label for="checkbox-parking">ПАРКОВКА</label>
               </li>
               <li>
-                <input id="checkbox-3" type="checkbox">
-                <label for="checkbox-3">WI-FI</label>
+                <input id="checkbox-wifi" type="checkbox">
+                <label for="checkbox-wifi">WI-FI</label>
               </li>
             </ul>
           </div>
           <div class="inner-checkboxes-house">
-            <p class="inner-content-title">ТИП ЖИЛЬЯ:</p>
+            <div class="inner-content-title">ТИП ЖИЛЬЯ:</div>
             <ul>
               <li>
-                <input id="checkbox-4" type="checkbox" checked>
-                <label for="checkbox-4">ГОСТИНИЦА</label>
+                <input id="checkbox-hotel" type="checkbox" checked>
+                <label for="checkbox-hotel">ГОСТИНИЦА</label>
               </li>
               <li>
-                <input id="checkbox-5" type="checkbox" checked>
-                <label for="checkbox-5">МОТЕЛЬ</label>
+                <input id="checkbox-motel" type="checkbox" checked>
+                <label for="checkbox-motel">МОТЕЛЬ</label>
               </li>
               <li>
-                <input id="checkbox-6" type="checkbox" checked>
-                <label for="checkbox-6">АПАРТАМЕНТЫ</label>
+                <input id="checkbox-apartments" type="checkbox" checked>
+                <label for="checkbox-apartments">АПАРТАМЕНТЫ</label>
               </li>
             </ul>
           </div>
           <div class="inner-range-submit">
-            <label for="price">СТОИМОСТЬ В СУТКИ:</label>
-            ОТ 0 <input type="range" id="price" name="price" min="0" max="3000" step="1"> ДО 3000
+            <div class="price"><label for="price">СТОИМОСТЬ В СУТКИ:</label></div>
+            <div class="range">ОТ <input type="text" name="startprice" value="0">  ДО <input type="text" name="finalprice" value="3000"></div>
+            <input type="range" id="price" name="price" min="0" max="3000" step="1">
             <input type="submit" value="ПОКАЗАТЬ">
           </div>
         </fieldset>
       </form>
-      <div class="search-menu">
-        <p class="number-items">НАЙДЕНО:3</p>
-        <p class="inner-sort">Сортировка</p>
-        <div class="inner-sort">
-          <a href="#">ПО ЦЕНЕ</a>
-        </div>
-        <div class="inner-sort">
-          <a href="#">ПО ТИПУ</a>
-        </div>
-        <div class="inner-sort">
-          <a href="#">ПО РЕЙТИНГУ</a>
-        </div>
+      <div class="search-results">
+        <div class="number-items">НАЙДЕНО:3</div>
+        <div class="inner-sort">Сортировка</div>
+        <a href="#">ПО ЦЕНЕ</a>
+        <a href="#">ПО ТИПУ</a>
+        <a href="#">ПО РЕЙТИНГУ</a>
         <a class="arrow-up"></a>
         <a class="arrow-down"></a>
       </div>
     </div>
     <div class="hotel-1">
-      <img class="hotel-1-img" src="http://placehold.it/150x100">
+      <div class="hotel-1-img">
+      <img  src="http://placehold.it/150x100">
+      </div>
       <div class="hotel-1-info">
-      <h2>AMARA RESORT & SPA</h2>
-        <p class="hotel-1-type">ГОСТИНИЦА</p>
-        <p class="hotel-1-price">ОТ 4000 Р.</p>
+      <h4>AMARA RESORT & SPA</h4>
+        <div class="hotel-1-type">ГОСТИНИЦА</div>
+        <div class="hotel-1-price">ОТ 4000 Р.</div>
         <a class="btn-details">ПОДРОБНОСТИ</a>
         <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
       </div>
@@ -105,11 +104,13 @@
       </div>
     </div>
     <div class="hotel-2">
-      <img class="hotel-2-img" src="http://placehold.it/150x100">
+      <div class="hotel-2-img">
+      <img src="http://placehold.it/150x100">
+      </div>
       <div class="hotel-2-info">
-        <h2>DESERT QUAIL INN</h2>
-        <p class="hotel-2-type">МОТЕЛЬ</p>
-        <p class="hotel-2-price">ОТ 3000 Р.</p>
+        <h4>DESERT QUAIL INN</h4>
+        <div class="hotel-2-type">МОТЕЛЬ</div>
+        <div class="hotel-2-price">ОТ 3000 Р.</div>
         <a class="btn-details">ПОДРОБНОСТИ</a>
         <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
       </div>
@@ -119,11 +120,13 @@
       </div>
     </div>
     <div class="hotel-3">
-      <img class="hotel-3-img" src="http://placehold.it/150x100">
+      <div class="hotel-3-img">
+      <img src="http://placehold.it/150x100">
+      </div>
       <div class="hotel-3-info">
-        <h2>VILLAS AT POCCO DIABLO</h2>
-        <p class="hotel-3-type">АПАРТАМЕНТЫ</p>
-        <p class="hotel-3-price">ОТ 2000 Р.</p>
+        <h4>VILLAS AT POCCO DIABLO</h4>
+        <div class="hotel-3-type">АПАРТАМЕНТЫ</div>
+        <div class="hotel-3-price">ОТ 2000 Р.</div>
         <a class="btn-details">ПОДРОБНОСТИ</a>
         <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
       </div>
