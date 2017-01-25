@@ -5,8 +5,144 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="main-navigation-left">
+            <li>
+              <a href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li>
+              <a href="#">ФОТО И ВИДЕО</a>
+            </li>
+          </ul>
+          <ul class="main-navigation-right">
+            <li>
+              <a href="#">КАРТА ШТАТА</a>
+            </li>
+            <li>
+              <a href="#">ГОСТИНИЦЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="index-logo">
+          <img src="http://placehold.it/150x100" width="100" height="100" alt="">
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="greetings">
+        <img class="welcome-banner-1" src="http://placehold.it/150x100">
+        <img class="title" src="http://placehold.it/150x100">
+        <img class="taqline" src="http://placehold.it/150x100">
+      </div>
+        <div class="index-tagline">
+          СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
+          <br>
+          ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+        </div>
+        <div class="index-reasons">
+          РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА ЛУЧШЕ, ЧЕМ ГРАНД КАНЬОН!
+        </div>
+        <section class="index-city-info">
+          <div class="info-main">
+            <div class="info-main-text">НАСТОЯЩИЙ ГОРОДОК
+              <div class="info-main-number">- №1 -</div>
+              <div>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div>
+            </div>
+          </div>
+          <div class="info-needs">
+            <div class="column info-housing">
+              <img src="http://placehold.it/150x100">
+              <div class="info-housing-text">ЖИЛЬЕ</div>
+              <div>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, КАК В КИНО!</div>
+            </div>
+            <div class="column info-food">
+              <img src="http://placehold.it/150x100">
+              <div class="info-food-text">ЕДА</div>
+              <div>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ ЧИЗБУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</div>
+            </div>
+            <div class="column info-souvenirs">
+              <img src="http://placehold.it/150x100">
+              <div class="info-souvenirs-text">СУВЕНИРЫ</div>
+              <div>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</div>
+            </div>
+          </div>
+        </section>
+        <section class="index-city-attractions">
+          <div class="attractions-main">
+            <div class="attractions-main-text">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА
+            <div class="attractions-main-number">- №2 -</div>
+            <div>ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО ОСМЕЛИТЕСЬ!</div>
+            </div>
+          </div>
+          <div class="attractions-logistics">
+            <div class="column attractions-square">
+              <div class="attractions-square-text">НЕБОЛЬШАЯ ПЛОЩАДЬ</div>
+              <div class="attractions-square-number">- №3 -</div>
+              <div>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО!</div>
+            </div>
+            <div class="column attractions-road">
+              <div class="attractions-road-text">КРАСИВАЯ ДОРОГА</div>
+              <div class="attractions-road-number">- №4 -</div>
+              <div>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</div>
+            </div>
+            <div class="column attractions-tourists">
+              <div class="attractions-tourists-text">МАЛО ТУРИСТОВ</div>
+              <div class="attractions-tourists-number">- №5 -</div>
+              <div>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</div>
+            </div>
+          </div>
+        </section>
+      <div class="index-booking">
+        <div class="interested">ЗАИНТЕРЕСОВАЛИСЬ?</div>
+        <div class="index-advice">
+          УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
+          <br>
+          И МЫ ПОКА ЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+        </div>
+        <button class="index-hotel-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <div class="index-modal">
+          <form action="/echo" method="post">
+            <fieldset>
+              <legend>БУКИНГ В СЕДОНЕ</legend>
+              <div class="index-modal-title">
+                <label for="date-check-in">ДАТА ЗАЕЗДА:</label>
+                <input type="date" id="date-check-in" required>
+                <label for="date-check-out">ДАТА ВЫЕЗДА:</label>
+                <input type="date" id="date-check-out" required>
+                <label for="amount-adult">ВЗРОСЛЫЕ:</label>
+                <input type="number" min="1" max="50" step="1" id="amount-adult" name="amount-adult" required>
+                <label for="amount-children">ДЕТИ:</label>
+                <input type="number" min="0" max="50" step="1" id="amount-children" name="amount-children">
+                <input type="submit" value="НАЙТИ">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="geolocation">
+        <img src="http://placehold.it/150x100">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-hashtag">
+          <p>#VISITSEDONA</p>
+        </div>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>WEBSITE BY</p>
+          <a class="logo-image" href="#">
+            <img src="http://placehold.it/150x100">
+          </a>
+        </section>
+      </div>
+    </footer>
+    <!--<<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
   </body>
 </html>
