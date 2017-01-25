@@ -8,7 +8,7 @@
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-navigation-left">
           <li>
             <a href="#">ИНФОРМАЦИЯ</a>
           </li>
@@ -16,7 +16,7 @@
             <a href="#">ФОТО И ВИДЕО</a>
           </li>
         </ul>
-        <ul>
+        <ul class="main-navigation-right">
           <li>
             <a href="#">КАРТА ШТАТА</a>
           </li>
@@ -72,8 +72,18 @@
           <div class="inner-range-submit">
             <div class="price"><label for="price">СТОИМОСТЬ В СУТКИ:</label></div>
             <div class="range">ОТ <input type="text" name="startprice" value="0">  ДО <input type="text" name="finalprice" value="3000"></div>
-            <input type="range" id="price" name="price" min="0" max="3000" step="1">
-            <input type="submit" value="ПОКАЗАТЬ">
+            <!--<input type="range" id="price" name="price" min="0" max="3000" step="1">-->
+            <div class="range-wrapper">
+              <div class="range-min">
+              </div>
+              <div class="range-max">
+              </div>
+              <div class="range-bar">
+                <div class="range-bar-white">
+                </div>
+              </div>
+            </div>
+            <button type="submit" value="ПОКАЗАТЬ"/>
           </div>
         </fieldset>
       </form>
@@ -87,53 +97,55 @@
         <a class="arrow-down"></a>
       </div>
     </div>
-    <div class="hotel-1">
-      <div class="hotel-1-img">
+    <div class="hotel-all">
+    <div class="hotel">
+      <div class="hotel-img">
       <img  src="http://placehold.it/150x100">
       </div>
-      <div class="hotel-1-info">
-      <h4>AMARA RESORT & SPA</h4>
-        <div class="hotel-1-type">ГОСТИНИЦА</div>
-        <div class="hotel-1-price">ОТ 4000 Р.</div>
+      <div class="hotel-info">
+        <a href="#" class="hotel-name"><h4>AMARA RESORT & SPA</h4></a>
+        <div class="hotel-type">ГОСТИНИЦА</div>
+        <div class="hotel-price">ОТ 4000 Р.</div>
         <a class="btn-details">ПОДРОБНОСТИ</a>
         <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
       </div>
-      <div class="hotel-1-rating">
-        <img class="hotel-1-stars" src="http://placehold.it/150x100">
-        <div class="hotel-1-rating-number">РЕЙТИНГ: 8.5</div>
+      <div class="hotel-rating">
+        <img class="hotel-stars" src="http://placehold.it/150x100">
+        <div class="hotel-rating-number">РЕЙТИНГ: 8.5</div>
       </div>
     </div>
-    <div class="hotel-2">
-      <div class="hotel-2-img">
+    <div class="hotel">
+      <div class="hotel-img">
       <img src="http://placehold.it/150x100">
       </div>
-      <div class="hotel-2-info">
-        <h4>DESERT QUAIL INN</h4>
-        <div class="hotel-2-type">МОТЕЛЬ</div>
-        <div class="hotel-2-price">ОТ 3000 Р.</div>
+      <div class="hotel-info">
+        <a href="#" class="hotel-name"><h4>DESERT QUAIL INN</h4></a>
+        <div class="hotel-type">МОТЕЛЬ</div>
+        <div class="hotel-price">ОТ 3000 Р.</div>
         <a class="btn-details">ПОДРОБНОСТИ</a>
         <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
       </div>
-      <div class="hotel-2-rating">
-        <img class="hotel-2-stars" src="http://placehold.it/150x100">
-        <div class="hotel-2-rating-number">РЕЙТИНГ: 8.9</div>
+      <div class="hotel-rating">
+        <img class="hotel-stars" src="http://placehold.it/150x100">
+        <div class="hotel-rating-number">РЕЙТИНГ: 8.9</div>
       </div>
     </div>
-    <div class="hotel-3">
-      <div class="hotel-3-img">
+    <div class="hotel">
+      <div class="hotel-img">
       <img src="http://placehold.it/150x100">
       </div>
-      <div class="hotel-3-info">
-        <h4>VILLAS AT POCCO DIABLO</h4>
-        <div class="hotel-3-type">АПАРТАМЕНТЫ</div>
-        <div class="hotel-3-price">ОТ 2000 Р.</div>
+      <div class="hotel-info">
+        <a href="#" class="hotel-name"><h4>VILLAS AT POCCO DIABLO</h4></a>
+        <div class="hotel-type">АПАРТАМЕНТЫ</div>
+        <div class="hotel-price">ОТ 2000 Р.</div>
         <a class="btn-details">ПОДРОБНОСТИ</a>
         <a class="btn-order">ЗАБРОНИРОВАТЬ</a>
       </div>
-      <div class="hotel-3-rating">
-        <img class="hotel-3-stars" src="http://placehold.it/150x100">
-        <div class="hotel-3-rating-number">РЕЙТИНГ: 9.2</div>
+      <div class="hotel-rating">
+        <img class="hotel-stars" src="http://placehold.it/150x100">
+        <div class="hotel-rating-number">РЕЙТИНГ: 9.2</div>
       </div>
+    </div>
     </div>
   </main>
   <footer class="main-footer">

@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <ul>
+          <ul class="main-navigation-left">
             <li>
               <a href="#">ИНФОРМАЦИЯ</a>
             </li>
@@ -16,7 +16,7 @@
               <a href="#">ФОТО И ВИДЕО</a>
             </li>
           </ul>
-          <ul>
+          <ul class="main-navigation-right">
             <li>
               <a href="#">КАРТА ШТАТА</a>
             </li>
@@ -32,7 +32,6 @@
     </header>
     <main class="container">
       <div class="greetings">
-        <img class="mountains-banner" src="http://placehold.it/150x100">
         <img class="welcome-banner-1" src="http://placehold.it/150x100">
         <img class="welcome-banner-2" src="http://placehold.it/150x100">
         <img class="title" src="http://placehold.it/150x100">
@@ -48,66 +47,67 @@
         </div>
         <section class="index-city-info">
           <div class="info-main">
-            <div class="info-main-text">НАСТОЯЩИЙ ГОРОДОК</div>
-            <div class="info-main-number">- №1 -</div>
-            <div>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div>
+            <div class="info-main-text">НАСТОЯЩИЙ ГОРОДОК
+              <div class="info-main-number">- №1 -</div>
+              <div>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div>
+            </div>
           </div>
-          <div class="info-image">
-            <img src="http://placehold.it/150x100">
-          </div>
-          <div class="info-housing">
+          <div class="info-needs">
+          <div class="column info-housing">
             <img src="http://placehold.it/150x100">
             <div class="info-housing-text">ЖИЛЬЕ</div>
             <div>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, КАК В КИНО!</div>
           </div>
-          <div class="info-food">
+          <div class="column info-food">
             <img src="http://placehold.it/150x100">
             <div class="info-food-text">ЕДА</div>
             <div>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ ЧИЗБУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</div>
           </div>
-          <div class="info-souvenirs">
+          <div class="column info-souvenirs">
             <img src="http://placehold.it/150x100">
             <div class="info-souvenirs-text">СУВЕНИРЫ</div>
             <div>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</div>
           </div>
+            </div>>
         </section>
         <section class="index-city-attractions">
-          <div class="attractions-image">
-            <img src="http://placehold.it/150x100">
-          </div>
           <div class="attractions-main">
             <div class="attractions-main-text">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</div>
-            <p class="attractions-main-number">- №2 -</p>
-            <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО ОСМЕЛИТЕСЬ!</p>
+            <div class="attractions-main-number">- №2 -</div>
+            <div>ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО ОСМЕЛИТЕСЬ!</div>
           </div>
-          <div class="attractions-square">
-            <p class="attractions-square-text">НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
-            <p class="attractions-square-number">- №3 -</p>
-            <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО!</p>
+          <div class="attractions-logistics">
+          <div class="column attractions-square">
+            <div class="attractions-square-text">НЕБОЛЬШАЯ ПЛОЩАДЬ</div>
+            <div class="attractions-square-number">- №3 -</div>
+            <div>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО!</div>
           </div>
-          <div class="attractions-road">
-            <p class="attractions-road-text">КРАСИВАЯ ДОРОГА</p>
-            <p class="attractions-road-number">- №4 -</p>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          <div class="column attractions-road">
+            <div class="attractions-road-text">КРАСИВАЯ ДОРОГА</div>
+            <div class="attractions-road-number">- №4 -</div>
+            <div>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</div>
           </div>
-          <div class="attractions-tourists">
-            <p class="attractions-tourists-text">МАЛО ТУРИСТОВ</p>
-            <p class="attractions-tourists-number">- №5 -</p>
-            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          <div class="column attractions-tourists">
+            <div class="attractions-tourists-text">МАЛО ТУРИСТОВ</div>
+            <div class="attractions-tourists-number">- №5 -</div>
+            <div>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</div>
           </div>
+            </div>
         </section>
-      <div class="interested">ЗАИНТЕРЕСОВАЛИСЬ?</div>
-      <div class="index-advice">
-        УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
-        <br>
-        И МЫ ПОКА ЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
-      </div>
-      <button class="index-hotel-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       <div class="index-booking">
+        <div class="interested">ЗАИНТЕРЕСОВАЛИСЬ?</div>
+        <div class="index-advice">
+          УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
+          <br>
+          И МЫ ПОКА ЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+        </div>
+        <button class="index-hotel-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      </div>
+      <div class="index-modal">
         <form action="/echo" method="post">
           <fieldset>
             <legend>БУКИНГ В СЕДОНЕ</legend>
-            <div class="index-booking-title">
+            <div class="index-modal-title">
               <label for="date-check-in">ДАТА ЗАЕЗДА:</label>
               <input type="date" id="date-check-in" required>
               <label for="date-check-out">ДАТА ВЫЕЗДА:</label>
