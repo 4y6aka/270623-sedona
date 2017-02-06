@@ -19,3 +19,347 @@ h2 {
   font-weight: bold;
   color: #000000;
 }
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  /* Только для оформления сетки */
+  min-height: 55px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  width: 1056px;
+  /*margin: 0 auto;*/
+  margin-left: 72px;
+  background-color: yellow;
+  height: 55px;
+}
+
+.main-navigation-left {
+  float: left;
+  width: 350px;
+  background-color: lime;
+}
+
+.index-logo {
+  position: absolute;
+}
+
+.main-navigation-right {
+  float: right;
+  width: 350px;
+  background-color: lime;
+}
+
+.greetings {
+  min-height: 508px;
+  margin-bottom: 62px;
+  background-color: aqua;
+}
+
+.title {
+  margin-left: 506px;
+  margin-top: 77px;
+  margin-bottom: 11px;
+}
+
+.line {
+  position: absolute;
+}
+
+.gorgeous {
+  margin-left: 513px;
+  margin-bottom: 55px;
+}
+
+.sedona {
+  margin-left: 371px;
+  margin-bottom: 56px;
+}
+
+.taqline {
+  margin-left: 452px;
+}
+
+.index-tagline {
+  width: 440px;
+  min-height: 48px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  background-color: lime;
+}
+
+.index-reasons {
+  width: 490px;
+  min-height: 13px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  background-color: lime;
+}
+
+.info-main {
+  min-height: 256px;
+  background-color: lime;
+}
+
+.info-main-text {
+  float: left;
+  width: 400px;
+  min-height: 256px;
+  background-color: aqua;
+}
+
+.info-needs {
+  min-height: 330px;
+}
+
+.column {
+  width: 400px;
+  min-height: 330px;
+}
+
+.info-housing {
+  float:left;
+  background-color: chocolate;
+}
+
+.info-food {
+  float: left;
+  background-color: yellow;
+}
+
+.info-souvenirs {
+  float: right;
+  background-color: fuchsia;
+}
+
+.attractions-main {
+  min-height: 256px;
+  background-color: lime;
+}
+
+.attractions-main-text {
+  float: right;
+  width: 400px;
+  min-height: 256px;
+  background-color: aqua;
+}
+
+.column-2 {
+  width: 400px;
+  min-height: 256px;
+}
+
+.attractions-square {
+  float:left;
+  background-color: chocolate;
+}
+
+.attractions-road {
+  float: left;
+  background-color: yellow;
+}
+
+.attractions-tourists {
+  float: right;
+  background-color: fuchsia;
+}
+
+
+.index-booking{
+  min-height: 291px;
+  background-color: lime;
+}
+
+.interested {
+  width: 300px;
+  min-height: 24px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 28px;
+  background-color: aqua;
+}
+
+.index-advice {
+  width: 434px;
+  min-height: 36px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: aqua;
+}
+
+.index-hotel-search {
+  width: 568px;
+  min-height: 86px;
+  margin-left: 316px;
+}
+
+.geolocation {
+  min-height: 593px;
+  background-color: yellow;
+}
+
+.index-modal {
+  width: 568px;
+  min-height: 395px;
+  margin-left: 316px;
+}
+
+.main-footer {
+  min-height: 120px;
+  background-color: lime;
+}
+
+.footer-hashtag {
+  float: left;
+  width: 136px;
+  min-height: 16px;
+  margin-top: 52px;
+  /*margin-bottom: 52px;*/
+  margin-left: 132px;
+  background-color: aqua;
+}
+
+.footer-social {
+  float: left;
+  width: 150px;
+  min-height: 48px;
+  margin-left: 256px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  background-color: aqua;
+}
+
+.footer-copyright {
+  float: right;
+  width: 195px;
+  min-height: 48px;
+  margin-right: 102px;
+  margin-bottom: 36px;
+  background-color: aqua;
+}
+
+.container-inner{
+  width: 1056px;
+  margin: 0 auto;
+}
+.inner-search {
+  min-height: 220px;
+  background-color: aqua;
+}
+
+.inner-checkboxes-infrastructure {
+  float: left;
+  width: 241px;
+  min-height: 220px;
+  background-color: yellow;
+}
+
+.inner-checkboxes-house {
+  float: left;
+  width: 241px;
+  min-height: 220px;
+  background-color: chocolate;
+}
+
+.inner-range-submit {
+  float: right;
+  width: 328px;
+  min-height: 220px;
+  background-color: fuchsia;
+}
+
+.search-results {
+  min-height: 86px;
+  background-color: lime;
+}
+
+.number-items {
+  float: left;
+  width: 115px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-color: aqua;
+}
+
+.inner-sort {
+  float: left;
+  width: 78px;
+  min-height: 10px;
+  margin-left: 48px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  background-color: aqua;
+}
+
+.inner-types {
+  float: left;
+  width: 250px;
+  min-height: 10px;
+  margin-left: 40px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  background-color: aqua;
+}
+
+.arrows {
+  float: right;
+  width: 35px;
+  min-height: 10px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  background-color: aqua;
+}
+
+.hotel {
+  min-height: 150px;
+}
+
+.hotel-img {
+  float: left;
+  width: 135px;
+  min-height: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*.hotel-info {
+  float: left;
+  width: 260px;
+  min-height: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  background-color: lime;
+}*/
+
+/*.hotel-rating {
+  float: right;
+  width: 120px;
+  min-height: 90px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: lime;
+}*/
+
+.hotel-1 {
+  background-color: yellow;
+}
+
+.hotel-2 {
+  background-color: chocolate;
+}
+.hotel-3 {
+  background-color: fuchsia;
+}
+
