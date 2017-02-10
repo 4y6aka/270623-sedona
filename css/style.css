@@ -1,9 +1,11 @@
 body {
+  min-width: 1200px;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   color: #000000;
   font-family: 'PT Sans', "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -27,21 +29,9 @@ h2 {
   clear: both;
 }
 
-.main-header {
-  /* Только для оформления сетки */
-  min-height: 55px;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
-}
-
-.main-navigation {
-  width: 1056px;
-  margin-left: 72px;
-  background-color: yellow;
-  height: 55px;
 }
 
 .main-navigation ul {
@@ -54,21 +44,40 @@ h2 {
 
 .main-navigation li {
   display: inline-block;
-  font-size: 16px;
-  line-height: 20px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: center;
   vertical-align: top;
 }
 
 .main-navigation a {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 17px;
+  width: 239px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  color: #000000;
+  text-decoration: none;
 }
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:focus {
+  color: #766357;
+}
+
+/*.main-navigation a:active {
+	color: #766357;
+}*/
 
 .main-navigation-left {
   float: left;
-  width: 350px;
-  background-color: lime;
 }
 
 .index-logo {
@@ -79,14 +88,16 @@ h2 {
 
 .main-navigation-right {
   float: right;
-  width: 350px;
-  background-color: lime;
 }
 
 .greetings {
   min-height: 508px;
   margin-bottom: 62px;
-  background-color: aqua;
+  background-color: #000000;
+  background-image: url("../img/index-mountain-bottom.png"),
+  url("../img/index-mountain.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 451px, 0 -50px;
 }
 
 .title {
@@ -109,36 +120,77 @@ h2 {
   margin-left: 452px;
 }
 
+.index-features {
+  background: #ffffff;
+}
+
 .index-tagline {
-  width: 440px;
-  min-height: 48px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
   margin: 0 auto;
-  margin-bottom: 37px;
-  background-color: lime;
+  margin-bottom: 33px;
+
+  text-align: center;
 }
 
 .index-reasons {
-  width: 490px;
-  min-height: 13px;
+  font-size: 14px;
+  line-height: 26px;
+
   margin: 0 auto;
-  margin-bottom: 56px;
-  background-color: lime;
+  margin-bottom: 53px;
+
+  text-align: center;
 }
 
 .info-main {
   min-height: 256px;
-  background-color: lime;
+  background-color: chocolate;
+  background-image: url("../img/index-city.jpg");
+  background-repeat: no-repeat;
+  background-position: 400px 0;
 }
 
-.info-main-text {
+.main-text {
   float: left;
   width: 400px;
-  min-height: 256px;
-  background-color: aqua;
+
+  text-align: center;
+  background-color: rgba(129, 179, 210, 1);
+  color: #ffffff;
 }
 
-.info-needs {
-  min-height: 330px;
+.main-title {
+  width: 155px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight:bold;
+
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.main-number {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+
+  padding-top: 18px;
+}
+
+.main-features {
+  width: 285px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+
+  padding-top: 18px;
+  padding-bottom: 45px;
+  margin: 0 auto;
 }
 
 .column {
@@ -147,75 +199,128 @@ h2 {
   min-height: 330px;
 }
 
-.info-housing {
-  background-color: chocolate;
+.info-title {
+  width: 125px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight:bold;
+
+  margin: 0 auto;
+  padding-top: 164px;
+
+  text-align: center;
+  position: relative;
 }
 
-.info-food {
-  background-color: yellow;
+.info-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  background-position: -10px -832px;
 }
 
-.info-souvenirs {
-  background-color: fuchsia;
+.food::before {
+  width: 74px;
+  height: 70px;
+  background-position: -10px -520px;
+}
+
+.souvenirs::before {
+  width: 64px;
+  height: 76px;
+  background-position: -10px -736px;
+}
+
+.info-text {
+  width: 255px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 85px;
+
+  text-align: center;
 }
 
 .attractions-main {
   min-height: 256px;
-  background-color: lime;
+  background-color: chocolate;
+  background-image: url("../img/index-devils-bridge.jpg");
+  background-repeat: no-repeat;
 }
 
 .attractions-main-text {
   float: right;
   width: 400px;
   min-height: 256px;
-  background-color: aqua;
+  background-color: rgba(129, 179, 210, 1);
+  text-align: center;
+  color: #ffffff;
 }
 
 .column-2 {
   float:left;
   width: 400px;
   min-height: 256px;
+  background-color: rgba(238, 238, 238, 1);
+  text-align: center;
 }
-
-.attractions-square {
-  background-color: chocolate;
-}
-
-.attractions-road {
-  background-color: yellow;
-}
-
-.attractions-tourists {
-  background-color: fuchsia;
-}
-
 
 .index-booking{
-  /*min-height: 291px;*/
-  background-color: lime;
+
+  background-color: #ffffff;
   padding-top: 58px;
+  text-align: center;
 }
 
 .interested {
-  width: 300px;
-  min-height: 24px;
+  width: 450px;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+
   margin: 0 auto;
-  margin-bottom: 38px;
-  background-color: aqua;
+  margin-bottom: 34px;
 }
 
 .index-advice {
-  width: 434px;
-  min-height: 36px;
+  width: 450px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+
   margin: 0 auto;
   margin-bottom: 50px;
-  background-color: aqua;
 }
 
-.index-hotel-search {
+.index-btn {
   width: 568px;
   min-height: 86px;
-  margin-left: 316px;
+
+  margin: 0 auto;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+  font-family: 'PT Sans', "Arial", sans-serif;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: rgba(118, 99, 87, 1);
+  border:none;
+  cursor: pointer;
 }
 
 .geolocation {
@@ -228,44 +333,364 @@ h2 {
   width: 568px;
   min-height: 395px;
   margin-left: 316px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.index-form {
+  padding: 55px;
+}
+
+.index-form .input-date {
+
+
+  width: 315px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 25px;
+  margin-bottom: 29px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+}
+
+.index-form .input-date:hover {
+  background-color: rgba (235, 235, 235, 1);
+}
+
+.input-date:focus {
+  outline: rgba(229, 229, 229, 1) solid 3px;
+
+}
+
+.index-form  .label-date::after {
+  content: "";
+  position: absolute;
+
+  z-index: 2;
+
+  top: 50%;
+  left: 430px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 22px;
+  /*background-position: -10px -198px;*/
+  background-position: -10px -610px;
+}
+
+.label-date:hover::after {
+  left:430px;
+  background-position: -10px -652px;
+}
+
+.label-date:active::after {
+  left:430px;
+  background-position: -10px -694px;
+}
+
+.index-form .label-date {
+  position: relative;
+  margin: 0;
+  margin-right: 14px;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.index-form .check-in {
+  margin-right: 17px;
+}
+
+.index-amount-adult {
+  float: left;
+  width: 230px;
+}
+
+.index-amount-child {
+  float: right;
+  width: 180px;
+}
+
+.label-amount {
+  position: relative;
+  margin: 0;
+  margin-right: 14px;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.label-adult::before {
+  content: "-";
+  position: absolute;
+
+  z-index: 2;
+
+  top: -15px;
+  left: 125px;
+  font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: rgba(169, 169, 169, 1);
+  text-transform: uppercase;
+}
+
+.pic:hover::before  {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pic:active::before  {
+  color: rgba(129, 179, 210);
+}
+
+.pic:hover::after  {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pic:active::after  {
+  color: rgba(129, 179, 210);
+}
+
+.label-adult::after {
+  content: "+";
+  position: absolute;
+
+  z-index: 2;
+
+  top: -7px;
+  left: 200px;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: rgba(169, 169, 169, 1);
+  text-transform: uppercase;
+}
+
+.label-child::before {
+  content: "-";
+  position: absolute;
+
+  z-index: 2;
+
+  top: -15px;
+  left: 77px;
+  font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: rgba(169, 169, 169, 1);
+  text-transform: uppercase;
+}
+
+.label-child::after {
+  content: "+";
+  position: absolute;
+
+  z-index: 2;
+
+  top: -7px;
+  left: 150px;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: rgba(169, 169, 169, 1);
+  text-transform: uppercase;
+}
+
+.input-amount {
+  width:  65px;
+  padding-left: 54px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+.adult {
+  margin-left: 21px;
+}
+
+.child {
+  margin-left: 5px;
+}
+
+.modal-btn {
+  width: 100%;
+  min-height: 58px;
+  margin-top: 58px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+  font-family: 'PT Sans', "Arial", sans-serif;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: rgba(129, 179, 210, 1);
+  border:none;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+.modal-btn:active {
+  background-color: rgba(84, 150, 189, 1);
+  color: rgba(136, 182, 209, 1);
 }
 
 .main-footer {
   margin-top: -120px;
   min-height: 120px;
-  background-color: rgba(255, 255, 0, 0.4);
+
   font-size: 0;
 }
 
 
 .foot {
   display: inline-block;
-  width: 400px;
+
   line-height: 26px;
   vertical-align: top;
 
+  background-color: rgba(255, 255, 0, 0.4);
 }
 
 .footer-hashtag {
+  width: 400px;
   font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+
   padding-top: 47px;
   padding-bottom: 47px;
-  background-color: aqua;
+  text-align: center;
 }
 
 .footer-social {
+  width: 400px;
   font-size: 16px;
-  padding-top: 46px;
-  padding-bottom: 47px;
-  background-color: lime;
+
+  padding-top: 32px;
+  padding-bottom: 33px;
+
+  text-align: center;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+
+
+  margin-right: 3px;
+  background: rgba(129, 179, 210, 1) url("../img/sprite.png") no-repeat center;
+
+}
+
+.social-btn:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.social-btn-tw {
+  background-position: 5px -906px;
+}
+
+.social-btn-tw:active {
+  background-color: rgba (84, 150, 189, 1);
+  background-position: 5px -939px;
+}
+
+.social-btn-fb {
+  background-position: 10px 5px;
+}
+
+.social-btn-fb:active {
+  background-position: 10px -74px;
+}
+
+.social-btn-you {
+  background-position: 5px -978px;
+}
+
+.social-btn-you:active {
+  background-position: 5px -1014px;
 }
 
 .footer-copyright {
+  width: 298px;
 
-  font-size: 16px;
-  padding-top: 37px;
-  padding-bottom: 36px;
-  background-color: aqua;
+  font-size: 14px;
+  line-height: 26px;
+
+  padding-top: 47px;
+  padding-bottom: 47px;
+  padding-left: 102px;
+
+}
+
+.logo-image {
+  position: relative;
+  padding-right: 200px;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo-image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 72px;
+  background-position: 5px -146px;
+}
+
+.logo-image:hover::after {
+  background-position: 5px -264px;
+}
+
+.logo-image:active::after {
+  background-position: 5px -382px;
 }
 
 .container-inner{
