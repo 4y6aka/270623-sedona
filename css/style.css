@@ -701,6 +701,8 @@ h2 {
   color: #766357;
 }
 
+
+
 .container-inner{
   width: 1056px;
   margin: 0 auto;
@@ -720,8 +722,6 @@ h2 {
 .inner-checkboxes-house {
   float: left;
   width: 241px;
-
-
 }
 
 .inner-checkboxes-list {
@@ -983,8 +983,22 @@ h2 {
   border-bottom: 1px dashed rgba(204, 204, 205, 1);
 }
 
+.types-btn:hover {
+  color: #81b3d2;
+}
+
+.types-btn:active {
+  color: #000000;
+  border: none;
+}
+
+.types-btn:focus {
+  color: #81b3d2;
+  border: none;
+}
+
 .active {
-  color: #81AAD2;
+  color: #81b3d2;
   border-bottom: none;
 }
 
@@ -1004,7 +1018,7 @@ a.arrow {
 .arrow::before {
   content: "";
   display: inline-block;
-  border: 10px solid #81AAD2;
+  border: 10px solid #cccccc;
   border-right-width: 5px;
   border-left-width: 5px;
   border-right-color: transparent;
@@ -1012,8 +1026,29 @@ a.arrow {
 }
 
 .arrow-up::before {
+  border-top-width: 0;
+}
 
-  border: 10px solid #CCCCCC;
+.arrow-up:hover::before {
+  border: 10px solid #000000;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-width: 0;
+}
+
+.arrow-up:active::before {
+  border: 10px solid #81b3d2;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-width: 0;
+}
+
+.arrow-up:focus::before {
+  border: 10px solid #81b3d2;
   border-right-width: 5px;
   border-left-width: 5px;
   border-right-color: transparent;
@@ -1022,6 +1057,33 @@ a.arrow {
 }
 
 .arrow-down::before {
+  border-bottom-width: 0;
+}
+
+.arrow-down:hover::before {
+  border: 10px solid #000000;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-width: 0;
+}
+
+.arrow-down:active::before {
+  border: 10px solid #81b3d2;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-width: 0;
+}
+
+.arrow-down:focus::before {
+  border: 10px solid #81b3d2;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
   border-bottom-width: 0;
 }
 
@@ -1060,6 +1122,14 @@ a.arrow {
   font-family: 'PT Sans', "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: #b2b2b2;
 }
 
 .hotel-info-left {
@@ -1111,6 +1181,15 @@ a.arrow {
   cursor: pointer;
 }
 
+.btn-details:hover {
+  background: #669ec0;
+}
+
+.btn-details:active {
+  color: #88b6d1;
+  background: #5496bd;
+}
+
 .btn-order {
   display: block;
   width: 130px;
@@ -1131,6 +1210,15 @@ a.arrow {
 
   background: rgba(118, 99, 87, 1);
   cursor: pointer;
+}
+
+.btn-order:hover {
+  background: #604e43;
+}
+
+.btn-order:active {
+  color: #857871;
+  background: #503e33;
 }
 
 .hotel-rating {
