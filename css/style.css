@@ -417,7 +417,7 @@ h2 {
   width: 21px;
   height: 22px;
   /*background-position: -10px -198px;*/
-  -ms-background-position:-100px -555px;
+  /*-ms-background-position:-100px -555px;*/
   background-position: -10px -355px;
 }
 
