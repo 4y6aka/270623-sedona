@@ -8,14 +8,16 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="wrapper">
+  <div></div>
 <header class="main-header">
   <div class="container">
     <nav class="main-navigation clearfix">
       <ul class="main-navigation-left">
-        <li>
+        <li class="nav-li-left">
           <a href="#">Информация</a>
         </li>
-        <li>
+        <li class="nav-li-left">
           <a href="#">Фото и видео</a>
         </li>
       </ul>
@@ -23,10 +25,10 @@
         <img src="img/logo-both.png" width="138" height="70" alt="лого">
       </div>
       <ul class="main-navigation-right">
-        <li>
+        <li class="nav-li-right">
           <a href="#">Карта штата</a>
         </li>
-        <li>
+        <li class="nav-li-right">
           <a href="inner.html">Гостиницы</a>
         </li>
       </ul>
@@ -131,7 +133,7 @@
     </form>
   </div>
   <div class="geolocation">
-
+    <iframe src="https://www.google.com/maps/d/embed?mid=1nLp8BNyn28bj0LuZX5Nmj7P75Wg&hl=en" width="1200" height="593"></iframe>
   </div>
 </main>
 <footer class="main-footer">
@@ -151,6 +153,26 @@
   </div>
 </footer>
 <!--<<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
+</div>
+<script>
+	var link = document.querySelector(".index-btn");
+	var popup = document.querySelector(".index-modal");
+	var checkin = popup.querySelector(".check-in");
+
+	link.addEventListener("click", function(event) {
+	event.preventDefault();
+	popup.classList.toggle("index-modal-hide");
+	checkin.focus();
+      });
+
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (!popup.classList.contains("index-modal-hide")) {
+        popup.classList.add("index-modal-hide");
+      }
+    }
+  });
+</script>
 </body>
 </html>
 

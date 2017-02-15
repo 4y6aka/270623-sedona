@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   min-width: 1200px;
   font-size: 14px;
   line-height: 24px;
@@ -6,6 +7,7 @@ body {
   color: #000000;
   font-family: 'PT Sans', "Arial", sans-serif;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -27,6 +29,13 @@ h2 {
 
   display: table;
   clear: both;
+}
+
+.wrapper {
+	width: 1200px;
+  margin: 0 auto;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
 }
 
 .container {
@@ -53,16 +62,18 @@ h2 {
   line-height: 26px;
   font-weight: bold;
 
-  text-align: center;
+  /*text-align: center;*/
   vertical-align: top;
+
+  width: 240px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 
 .main-navigation a {
   display: block;
-  width: 239px;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
 
   color: #000000;
   text-decoration: none;
@@ -76,12 +87,17 @@ h2 {
   color: #766357;
 }
 
-/*.main-navigation a:active {
-	color: #766357;
-}*/
-
 .main-navigation-left {
   float: left;
+
+}
+
+.nav-li-left {
+	text-align: left;
+}
+
+.main-navigation-left li:first-child {
+	padding-left: 72px;
 }
 
 .index-logo {
@@ -92,6 +108,15 @@ h2 {
 
 .main-navigation-right {
   float: right;
+
+}
+
+.nav-li-right {
+	text-align: right;
+}
+
+.main-navigation-right li:last-child {
+	padding-right: 72px;
 }
 
 .greetings {
@@ -102,6 +127,7 @@ h2 {
   url("../img/index-mountain.jpg");
   background-repeat: no-repeat;
   background-position: 0 451px, 0 -50px;
+  background-size: 100%, 100%;
 }
 
 .title {
@@ -151,7 +177,6 @@ h2 {
 
 .info-main {
   min-height: 256px;
-  background-color: chocolate;
   background-image: url("../img/index-city.jpg");
   background-repeat: no-repeat;
   background-position: 400px 0;
@@ -257,7 +282,6 @@ h2 {
 
 .attractions-main {
   min-height: 256px;
-  background-color: chocolate;
   background-image: url("../img/index-devils-bridge.jpg");
   background-repeat: no-repeat;
 }
@@ -329,7 +353,7 @@ h2 {
 
 .geolocation {
   min-height: 593px;
-  background-color: purple;
+  width: 100%;
 }
 
 .index-modal {
@@ -339,6 +363,7 @@ h2 {
   margin-left: 316px;
   background-color: #ffffff;
   z-index: 1;
+  animation: bounce 1.5s;
 }
 
 .index-form {
@@ -346,8 +371,6 @@ h2 {
 }
 
 .index-form .input-date {
-
-
   width: 315px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -376,6 +399,10 @@ h2 {
 
 }
 
+.label-date {
+  position: relative;
+}
+
 .index-form  .label-date::after {
   content: "";
   position: absolute;
@@ -390,6 +417,7 @@ h2 {
   width: 21px;
   height: 22px;
   /*background-position: -10px -198px;*/
+  -ms-background-position:-100px -555px;
   background-position: -10px -355px;
 }
 
@@ -591,8 +619,8 @@ h2 {
 
   line-height: 26px;
   vertical-align: top;
-
-  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-hashtag {
@@ -696,6 +724,25 @@ h2 {
   background-position: 5px -190px;
 }
 
+.index-modal-hide {
+  display: none;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-100px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* ------------------------------------ Внутренняя страница ----------------------------------- */
 .main-navigation .active {
   color: #766357;
@@ -704,24 +751,28 @@ h2 {
 
 
 .container-inner{
-  width: 1056px;
-  margin: 0 auto;
+  /*width: 1056px;
+  margin: 0 auto;*/
+  padding-left: 72px;
+  padding-right: 72px;
 }
 .inner-search {
-  min-height: 220px;
-  background: url("../img/inner-mountain-blur.jpg");
+  /*min-height: 220px;*/
+  background: url("../img/inner-mountain-blur.jpg") center top;
+  background-size: 100%;
 }
 
 .inner-checkboxes-infrastructure {
   float: left;
-  width: 241px;
+  width: 240px;
 
   margin-left: 72px;
+  margin-right: 14px;
 }
 
 .inner-checkboxes-house {
   float: left;
-  width: 241px;
+  width: 240px;
 }
 
 .inner-checkboxes-list {
@@ -927,11 +978,6 @@ h2 {
   color: #000000;
 
   background: #ffffff;
-}
-
-.search-results {
-  /*min-height: 86px;*/
-
 }
 
 .number-items {
