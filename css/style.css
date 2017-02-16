@@ -66,10 +66,7 @@ h2 {
   vertical-align: top;
 
   width: 240px;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+  
 }
 
 .main-navigation a {
@@ -77,10 +74,15 @@ h2 {
 
   color: #000000;
   text-decoration: none;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 
 .main-navigation a:hover {
   color: #81b3d2;
+  background-color: chocolate;
 }
 
 .main-navigation a:focus {
@@ -122,12 +124,13 @@ h2 {
 .greetings {
   min-height: 508px;
   margin-bottom: 62px;
-  background-color: #000000;
+  background-color: #e4f1f9;
   background-image: url("../img/index-mountain-bottom.png"),
   url("../img/index-mountain.jpg");
   background-repeat: no-repeat;
   background-position: 0 451px, 0 -50px;
-  background-size: 100%, 100%;
+  background-size: 100% 57px, 100%;
+
 }
 
 .title {
@@ -177,9 +180,11 @@ h2 {
 
 .info-main {
   min-height: 256px;
+  background-color: chocolate;
   background-image: url("../img/index-city.jpg");
   background-repeat: no-repeat;
   background-position: 400px 0;
+  background-size: 800px;
 }
 
 .main-text {
@@ -282,8 +287,10 @@ h2 {
 
 .attractions-main {
   min-height: 256px;
+  background-color: chocolate;
   background-image: url("../img/index-devils-bridge.jpg");
   background-repeat: no-repeat;
+  background-size: 800px;
 }
 
 .attractions-main-text {
@@ -403,8 +410,23 @@ h2 {
   position: relative;
 }
 
-.index-form  .label-date::after {
-  content: "";
+/*.index-form  .label-date::after {*/
+  /*content: "";*/
+  /*position: absolute;*/
+
+  /*z-index: 2;*/
+
+  /*top: 50%;*/
+  /*left: 430px;*/
+  /*transform: translate(-50%, -50%);*/
+  /*background-image: url("../img/sprite.png");*/
+  /*background-repeat: no-repeat;*/
+  /*width: 21px;*/
+  /*height: 22px;*/
+  /*background-position: -10px -355px;*/
+/*}*/
+
+.calendar-pic {
   position: absolute;
 
   z-index: 2;
@@ -416,8 +438,6 @@ h2 {
   background-repeat: no-repeat;
   width: 21px;
   height: 22px;
-  /*background-position: -10px -198px;*/
-  /*-ms-background-position:-100px -555px;*/
   background-position: -10px -355px;
 }
 
@@ -606,11 +626,19 @@ h2 {
   color: rgba(136, 182, 209, 1);
 }
 
-.main-footer {
-  margin-top: -120px;
+.geolocation {
+  background-color: mediumpurple;
+}
+
+.footer {
   min-height: 120px;
 
   font-size: 0;
+}
+
+.main-footer {
+  margin-top: -120px;
+
 }
 
 
@@ -659,12 +687,12 @@ h2 {
 }
 
 .social-btn-tw {
-  background-position: 5px -848px;
+  background-position: 5px -931px;
 }
 
 .social-btn-tw:active {
   background-color: rgba (84, 150, 189, 1);
-  background-position: 5px -884px;
+  background-position: 5px -966px;
 }
 
 .social-btn-fb {
@@ -676,14 +704,16 @@ h2 {
 }
 
 .social-btn-you {
-  background-position: 5px -918px;
+  background-position: 5px -1002px;
 }
 
 .social-btn-you:active {
-  background-position: 5px  -954px;
+  background-position: 5px  -1038px;
 }
 
 .footer-copyright {
+  /*width: 400px;*/
+
   width: 298px;
 
   font-size: 14px;
@@ -693,12 +723,14 @@ h2 {
   padding-bottom: 47px;
   padding-left: 102px;
 
+  text-align: left;
+  background-color: chocolate;
 }
 
 .logo-image {
   position: relative;
   padding-right: 200px;
-
+  margin-left: 8px;
   color: #000000;
   text-decoration: none;
 }
@@ -758,6 +790,7 @@ h2 {
 }
 .inner-search {
   /*min-height: 220px;*/
+  background-color: #e4f1f9;
   background: url("../img/inner-mountain-blur.jpg") center top;
   background-size: 100%;
 }
@@ -813,7 +846,7 @@ h2 {
   background-repeat: no-repeat;
   width: 22px;
   height: 22px;
-  background-position: -10px -711px;
+  background-position: -10px -753px;
 }
 
 .inner-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
@@ -1145,6 +1178,7 @@ a.arrow {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 30px;
+  background-color: chocolate;
 }
 
 .hotel-info {
@@ -1308,7 +1342,7 @@ a.arrow {
   background-repeat: no-repeat;
   width: 89px;
   height: 17px;
-  background-position: -10px -827px;
+  background-position: -10px -911px;
 }
 
 .three-stars::before {
@@ -1321,7 +1355,7 @@ a.arrow {
   background-repeat: no-repeat;
   width: 65px;
   height: 17px;
-  background-position: -10px -790px;
+  background-position: -10px -875px;
   }
 
 .two-stars::before {
@@ -1334,7 +1368,7 @@ a.arrow {
   background-repeat: no-repeat;
   width: 42px;
   height: 17px;
-  background-position: -10px -753px;
+  background-position: -10px -838px;
 }
 
 .hotel-last {
@@ -1349,8 +1383,3 @@ a.arrow {
 
 }
 
-.inner-footer {
-  min-height: 120px;
-  background-color: rgba(255, 255, 255, 0.4);
-  font-size: 0;
-}
