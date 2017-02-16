@@ -112,20 +112,32 @@
       <div class="index-modal">
         <form class="index-form" action="/echo" method="post">
           <div class="index-modal-title">
-            <label class="label-date check-in pic" for="date-check-in">Дата заезда:</label>
+            <label class="label-date check-in pic" for="date-check-in">Дата заезда: <a class="calendar-pic"></a></label>
             <input class="input-date" type="text" id="date-check-in" placeholder="24 апреля 2017" required>
-            <a class="calendar-pic"></a>
-            <label class="label-date check-out pic" for="date-check-out">Дата выезда:</label>
+
+            <label class="label-date check-out pic" for="date-check-out">Дата выезда:  <a class="calendar-pic"></a></label>
             <input class="input-date" type="text" id="date-check-out" placeholder="4 июля 2017" required>
-            <a class="calendar-pic"></a>
+
             <div class="index-amount clearfix">
-              <div class="index-amount-adult">
-                <label class="label-amount label-adult pic" for="amount-adult">Взрослые:</label>
-                <input class="input-amount adult" type="text" value="2" id="amount-adult" name="amount-adult" required>
+              <div class="index-amount-adult clearfix">
+                <div class="index-amount-label-left">
+                  <label class="label-amount label-adult pic" for="amount-adult">Взрослые:</label>
+                </div>
+                <div class=" div-input div-input-adult">
+                  <a class="adult-plus plus">+</a>
+                  <input class="input-amount adult" type="text" value="2" id="amount-adult" name="amount-adult" required>
+                  <a class="adult-minus minus">-</a>
+                </div>
               </div>
-              <div class="index-amount-child">
-                <label class="label-amount label-child pic" for="amount-children">Дети:</label>
-                <input class="input-amount child" type="text" value="0" id="amount-children" name="amount-children">
+              <div class="index-amount-child clearfix">
+                <div class="index-amount-label-left">
+                  <label class="label-amount label-child pic" for="amount-children">Дети:</label>
+                </div>
+                <div class="div-input div-input-child">
+                  <a class="adult-plus plus">+</a>
+                  <input class="input-amount child" type="text" value="0" id="amount-children" name="amount-children">
+                  <a class="adult-minus minus">-</a>
+                </div>
               </div>
             </div>
             <button class="modal-btn">Найти</button>
