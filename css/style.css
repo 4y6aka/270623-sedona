@@ -654,7 +654,11 @@ h2 {
 }
 
 .index-amount-label-child {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.div-input-child {
+  box-shadow: 7px 0 0 0 #f2f2f2;
 }
 
 .input-amount {
