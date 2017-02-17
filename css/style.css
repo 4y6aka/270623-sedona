@@ -101,6 +101,7 @@ h2 {
 
 .index-logo {
   position: absolute;
+  top: 0;
   left: 50%;
   margin-left: -69px;
 }
