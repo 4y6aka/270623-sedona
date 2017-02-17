@@ -367,7 +367,7 @@ h2 {
   margin-left: 316px;
   background-color: #ffffff;
   z-index: 1;
-  animation: bounce 0.9s;
+  animation: bounce 0.5s;
 }
 
 .index-form {
@@ -385,7 +385,7 @@ h2 {
 
   font-size: 14px;
   font-weight: bold;
-  /*line-height: 26px;*/
+  line-height: 1;
   font-family: 'PT Sans', "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
