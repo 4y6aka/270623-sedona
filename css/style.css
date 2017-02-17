@@ -527,8 +527,6 @@ h2 {
   min-height: 38px;
   border: none;
 
-
-
   text-align: center;
   vertical-align: middle;
 
@@ -995,7 +993,6 @@ h2 {
   color: #000000;
   font-family: 'PT Sans', "Arial", sans-serif;
   text-transform: uppercase;
-
 }
 
 .inner-sort {
@@ -1217,7 +1214,6 @@ a.arrow {
   padding-right: 0;
   padding-left: 12px;
 
-
   font-family: 'PT Sans', "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -1248,7 +1244,6 @@ a.arrow {
   padding-right: 0;
   padding-left: 12px;
 
-
   font-family: 'PT Sans', "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -1276,7 +1271,6 @@ a.arrow {
   min-height: 90px;
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
 .hotel-rating-number {
