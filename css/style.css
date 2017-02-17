@@ -119,6 +119,11 @@ h2 {
 	padding-right: 72px;
 }
 
+.logo-link {
+  padding: 0;
+  margin: 0;
+}
+
 .greetings {
   min-height: 508px;
   margin-bottom: 62px;
