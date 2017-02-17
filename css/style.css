@@ -62,7 +62,6 @@ h2 {
   line-height: 26px;
   font-weight: bold;
 
-  /*text-align: center;*/
   vertical-align: top;
 
   width: 240px;
@@ -72,8 +71,6 @@ h2 {
 }
 
 .main-navigation a {
-  /*display: block;*/
-
   color: #000000;
   text-decoration: none;
 }
@@ -88,7 +85,6 @@ h2 {
 
 .main-navigation-left {
   float: left;
-
 }
 
 .nav-li-left {
@@ -108,7 +104,6 @@ h2 {
 
 .main-navigation-right {
   float: right;
-
 }
 
 .nav-li-right {
@@ -133,7 +128,6 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 451px, 0 -50px;
   background-size: 100% 57px, 100%;
-
 }
 
 .title {
@@ -413,22 +407,6 @@ h2 {
   position: relative;
 }
 
-/*.index-form  .label-date::after {*/
-  /*content: "";*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: 50%;*/
-  /*left: 430px;*/
-  /*transform: translate(-50%, -50%);*/
-  /*background-image: url("../img/sprite.png");*/
-  /*background-repeat: no-repeat;*/
-  /*width: 21px;*/
-  /*height: 22px;*/
-  /*background-position: -10px -355px;*/
-/*}*/
-
 .calendar-pic {
   position: absolute;
 
@@ -451,15 +429,6 @@ h2 {
 .calendar-pic:active {
   background-position: -10px -439px;
 }
-/*.label-date:hover::after {*/
-  /*left:430px;*/
-  /*background-position: -10px -397px;*/
-/*}*/
-
-/*.label-date:active::after {*/
-  /*left:430px;*/
-  /*background-position: -10px -439px;*/
-/*}*/
 
 .index-form .label-date {
   position: relative;
@@ -487,16 +456,6 @@ h2 {
   font-size: 0;
 }
 
-/*.index-amount-adult {*/
-    /*float: left;*/
-    /*widt: 220px;*/
-/*}*/
-
-/*.index-amount-child {*/
-  /*float: right;*/
-  /*width: 179px;*/
-/*}*/
-
 .label-amount {
   position: relative;
   margin: 0;
@@ -510,132 +469,11 @@ h2 {
   text-transform: uppercase;
 }
 
-/*.adult-minus {*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: -15px;*/
-  /*left: 125px;*/
-  /*font-weight: bold;*/
-  /*font-size: 40px;*/
-  /*font-weight: bold;*/
-  /*line-height: 40px;*/
-  /*font-family: 'PT Sans', "Arial", sans-serif;*/
-  /*color: rgba(169, 169, 169, 1);*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-/*.adult-plus {*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: -3px;*/
-  /*left: 180px;*/
-  /*font-weight: bold;*/
-  /*font-size: 30px;*/
-  /*font-weight: bold;*/
-  /*line-height: 30px;*/
-  /*font-family: 'PT Sans', "Arial", sans-serif;*/
-  /*color: rgba(169, 169, 169, 1);*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-/*.label-adult::before {*/
-  /*content: "-";*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: -15px;*/
-  /*left: 125px;*/
-  /*font-weight: bold;*/
-  /*font-size: 40px;*/
-  /*font-weight: bold;*/
-  /*line-height: 40px;*/
-  /*font-family: 'PT Sans', "Arial", sans-serif;*/
-  /*color: rgba(169, 169, 169, 1);*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-/*.pic:hover::before  {*/
-  /*color: rgba(0, 0, 0, 1);*/
-/*}*/
-
-/*.pic:active::before  {*/
-  /*color: rgba(129, 179, 210);*/
-/*}*/
-
-/*.pic:hover::after  {*/
-  /*color: rgba(0, 0, 0, 1);*/
-/*}*/
-
-/*.pic:active::after  {*/
-  /*color: rgba(129, 179, 210);*/
-/*}*/
-
-/*.label-adult::after {*/
-  /*content: "+";*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: -7px;*/
-  /*left: 200px;*/
-  /*font-weight: bold;*/
-  /*font-size: 30px;*/
-  /*font-weight: bold;*/
-  /*line-height: 30px;*/
-  /*font-family: 'PT Sans', "Arial", sans-serif;*/
-  /*color: rgba(169, 169, 169, 1);*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-/*.label-child::before {*/
-  /*content: "-";*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: -15px;*/
-  /*left: 77px;*/
-  /*font-weight: bold;*/
-  /*font-size: 40px;*/
-  /*font-weight: bold;*/
-  /*line-height: 40px;*/
-  /*font-family: 'PT Sans', "Arial", sans-serif;*/
-  /*color: rgba(169, 169, 169, 1);*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-/*.label-child::after {*/
-  /*content: "+";*/
-  /*position: absolute;*/
-
-  /*z-index: 2;*/
-
-  /*top: -7px;*/
-  /*left: 150px;*/
-  /*font-weight: bold;*/
-  /*font-size: 30px;*/
-  /*font-weight: bold;*/
-  /*line-height: 30px;*/
-  /*font-family: 'PT Sans', "Arial", sans-serif;*/
-  /*color: rgba(169, 169, 169, 1);*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-
-/*.index-amount-label-child {*/
-  /*display: inline-block;*/
-
-  /*vertical-align: middle;*/
-/*}*/
-
 .div-input {
-  /*float: right;*/
   display: inline-block;
+
+  vertical-align: middle;
+
   margin: 0;
   padding: 0;
 
@@ -733,7 +571,6 @@ h2 {
   background-color: #f2f2f2;
 }
 
-
 .minus:hover {
   color: rgba(0, 0, 0, 1);
 }
@@ -741,14 +578,6 @@ h2 {
 .minus:active {
   color: rgba(129, 179, 210, 1);
 }
-
-/*.adult {*/
-  /*margin-left: 21px;*/
-/*}*/
-
-/*.child {*/
-  /*margin-left: 5px;*/
-/*}*/
 
 .modal-btn {
   width: 100%;
@@ -788,9 +617,7 @@ h2 {
 
 .main-footer {
   margin-top: -120px;
-
 }
-
 
 .foot {
   display: inline-block;
@@ -821,14 +648,12 @@ h2 {
   padding-bottom: 33px;
 
   text-align: center;
-
 }
 
 .social-btn {
   display: inline-block;
   width: 48px;
   height: 48px;
-
 
   margin-right: 3px;
   background: rgba(129, 179, 210, 1) url("../img/sprite.png") no-repeat center;
@@ -930,16 +755,11 @@ h2 {
   color: #766357;
 }
 
-
-
 .container-inner{
-  /*width: 1056px;
-  margin: 0 auto;*/
   padding-left: 72px;
   padding-right: 72px;
 }
 .inner-search {
-  /*min-height: 220px;*/
   background-color: #e4f1f9;
   background: url("../img/inner-mountain-blur.jpg") center top;
   background-size: 100%;
@@ -1193,7 +1013,6 @@ h2 {
 
 .inner-types {
   float: left;
-  /*width: 250px;*/
 
   line-height: 18px;
   font-size: 12px;
@@ -1318,7 +1137,6 @@ a.arrow {
 }
 
 .hotel {
-  /*min-height: 150px;*/
   border-top: 1px solid #E5E5E5;
 }
 
@@ -1488,7 +1306,6 @@ a.arrow {
   position: absolute;
   bottom: 73px;
   right: 0;
-  /*transform: translate(-50%, -50%);*/
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 89px;
@@ -1501,7 +1318,6 @@ a.arrow {
   position: absolute;
   bottom: 73px;
   right: 0;
-  /*transform: translate(-50%, -50%);*/
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 65px;
@@ -1514,7 +1330,6 @@ a.arrow {
   position: absolute;
   bottom: 73px;
   right: 0;
-  /*transform: translate(-50%, -50%);*/
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 42px;
@@ -1526,11 +1341,5 @@ a.arrow {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.inner-foot {
-  display: inline-block;
-  width: 352px;
-  line-height: 26px;
-  vertical-align: top;
 
-}
 

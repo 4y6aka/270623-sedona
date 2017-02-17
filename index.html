@@ -5,8 +5,8 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <!--<link href="css/style-mini.css" rel="stylesheet">-->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-mini.css" rel="stylesheet">
+  <!--<link href="css/style.css" rel="stylesheet">-->
 </head>
 <body>
   <div class="wrapper">
@@ -119,27 +119,23 @@
             <label class="label-date check-out pic" for="date-check-out">Дата выезда:  <a class="calendar-pic"></a></label>
             <input class="input-date" type="text" id="date-check-out" placeholder="4 июля 2017" required>
 
-            <div class="index-amount clearfix">
-              <!--<div class="index-amount-adult clearfix">-->
-                <div class="index-amount-label-adult div-input">
-                  <label class="label-amount label-adult pic" for="amount-adult">Взрослые:</label>
-                </div>
-                <div class=" div-input div-input-adult">
-                  <a class="adult-plus plus">+</a>
-                  <input class="input-amount adult" type="text" value="2" id="amount-adult" name="amount-adult" required>
-                  <a class="adult-minus minus">-</a>
-                </div>
-              <!--</div>-->
-              <!--<div class="index-amount-child clearfix">-->
-                <div class="index-amount-label-child div-input">
-                  <label class="label-amount label-child pic" for="amount-children">Дети:</label>
-                </div>
-                <div class="div-input div-input-child">
-                  <a class="adult-plus plus">+</a>
-                  <input class="input-amount child" type="text" value="0" id="amount-children" name="amount-children">
-                  <a class="adult-minus minus">-</a>
-                </div>
-              <!--</div>-->
+            <div class="index-amount">
+              <div class="index-amount-label-adult div-input">
+                <label class="label-amount label-adult pic" for="amount-adult">Взрослые:</label>
+              </div>
+              <div class=" div-input div-input-adult">
+                <a class="adult-plus plus">+</a>
+                <input class="input-amount adult" type="text" value="2" id="amount-adult" name="amount-adult" required>
+                <a class="adult-minus minus">-</a>
+              </div>
+              <div class="index-amount-label-child div-input">
+                <label class="label-amount label-child pic" for="amount-children">Дети:</label>
+              </div>
+              <div class="div-input div-input-child">
+                <a class="adult-plus plus">+</a>
+                <input class="input-amount child" type="text" value="0" id="amount-children" name="amount-children">
+                <a class="adult-minus minus">-</a>
+              </div>
             </div>
             <button class="modal-btn">Найти</button>
           </div>
