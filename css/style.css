@@ -484,25 +484,30 @@ h2 {
 
 
 .index-amount-label-adult {
-  margin-right: 22px;
+  width: 105px;
+  margin-right: 5px;
 }
 
 .div-input-adult {
-  margin-right: 60px;
+  width: 114px;
+  margin-right: 63px;
+  outline: #f2f2f2 solid 3px;
 }
 
 .index-amount-label-child {
-  margin-right: 8px;
+  width: 50px;
+  margin-right: 5px;
 }
 
 .div-input-child {
-  box-shadow: 7px 0 0 0 #f2f2f2;
+  width: 114px;
+  outline: #f2f2f2 solid 3px;
 }
 
 .input-amount {
   display: inline-block;
 
-  width:  37px;
+  width:  38px;
   min-height: 36px;
 
   border: none;
@@ -523,7 +528,7 @@ h2 {
 .plus {
   display: inline-block;
 
-  width:  37px;
+  width:  38px;
   min-height: 38px;
   border: none;
 
@@ -551,7 +556,7 @@ h2 {
 .minus {
   display: inline-block;
 
-  width:  37px;
+  width:  38px;
   min-height: 38px;
 
   border: none;
