@@ -358,6 +358,7 @@ h2 {
 .geolocation {
   min-height: 593px;
   width: 100%;
+  background-color: beige;
 }
 
 .index-modal {
